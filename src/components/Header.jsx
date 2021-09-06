@@ -11,7 +11,7 @@ const Header = () => {
                         <h1 class="leading-relaxed font-bold text-2xl"><Link to="/">OHU.</Link></h1>
                     </div>
 
-                    <div class="toggle md:hidden">
+                    {/* <div class="toggle md:hidden">
                         <button>
                             <svg 
                                 class="h-6 w-6 fill-current text-black"
@@ -21,7 +21,7 @@ const Header = () => {
                                 <path d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </button>
-                    </div>
+                    </div> */}
 
                     {/* <navbar class="navbar hidden md:block">
                         <ul class="flex space-x-8 text-sm font-semibold">

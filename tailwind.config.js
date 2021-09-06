@@ -42,7 +42,7 @@ module.exports = {
 			"pastel",
 			"forest",
 			"synthwave",
-			// "dark",
+			"dark",
 		],
 	},
 };

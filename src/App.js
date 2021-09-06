@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Single from "./pages/unit/Single";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Home path="/" />
 				</Route>
 			</Switch>
+			<Footer />
 		</Router>
 	);
 }
