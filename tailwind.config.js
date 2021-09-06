@@ -12,5 +12,37 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require("@tailwindcss/typography"),
+		require("@tailwindcss/aspect-ratio"),
+		require("daisyui"),
+	],
+	daisyui: {
+		// styled: false,
+		base: true,
+		utils: true,
+		logs: true,
+		rtl: false,
+		themes: [
+			{
+				orange: {
+					// custom theme
+					primary: "#ea5234",
+					"primary-focus": "#d43616",
+					"primary-content": "#ffffff",
+				},
+				lantern: {
+					primary: "#028ea9",
+					"primary-focus": "#027089",
+					"primary-content": "#ffffff",
+					secondary: "#ea5234",
+				},
+			},
+			"light",
+			"pastel",
+			"forest",
+			"synthwave",
+			// "dark",
+		],
+	},
 };
