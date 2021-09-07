@@ -6,9 +6,9 @@ const Unit = (props) => {
       <>
           <div className="flex flex-wrap justify-center mx-20  ">
           {data.map(u =>(
-            <div class="flex shadow-lg rounded-lg h-auto w-80 md:w-80 cursor-pointer my-10 mx-5 p-4 bg-indigo-50 transition duration-500 ease-in-out transform hover:translate-y-5 hover:shadow-2xl">
+            <div class="flex shadow-lg rounded-lg h-auto w-80 md:w-80 cursor-pointer my-10 mx-5 p-4 transition duration-500 ease-in-out transform hover:translate-y-5 hover:shadow-2xl">
               <Link to={`/unit/${u.slug}`} class="w-full block h-full">
-                <img alt="blog photo" src="https://ouch-cdn2.icons8.com/7IafUowCewhP-tIcwdGHyXhsJoqElQ00jmljBiQ2GMU/rs:fit:1216:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNjYv/YTc5MzE5ZDMtNWM5/ZS00MTVmLWJiMjQt/MzMxZjczZmQwN2Vj/LnBuZw.png" class="max-h-60 w-full object-cover"/>
+                <img alt="blog photo" src={`/logo/${u.logo}`} class="max-h-60 w-full object-cover"/>
                 <div class="w-full">
                   {/* <p class="text-primary-focus text-md font-medium">
                       Article
