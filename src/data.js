@@ -52,7 +52,7 @@ export const DATA = [
 	},
 	{
 		id: "2",
-		title: "Karisma ITB",
+		title: "KARISMA ITB",
 		slug: "karisma",
 		logo: "karisma.png",
 		video: "https://www.youtube.com/embed/2krM6RONKKY",
@@ -112,7 +112,7 @@ export const DATA = [
 	},
 	{
 		id: "3",
-		title: "Mata Salman",
+		title: "MATA' Salman",
 		slug: "mata",
 		logo: "mata.png",
 		video: "https://www.youtube.com/embed/HSec3kk-DXQ",
@@ -223,7 +223,7 @@ export const DATA = [
 	},
 	{
 		id: "5",
-		title: "Pustena",
+		title: "PUSTENA",
 		slug: "pustena",
 		logo: "pustena.png",
 		video: "https://www.youtube.com/embed/CTaeTgBiDK8",
@@ -396,7 +396,7 @@ export const DATA = [
 	},
 	{
 		id: "8",
-		title: "UPTQ AL-MUHANDIS",
+		title: "UPTQ Al-Muhandis",
 		slug: "uptq",
 		logo: "uptq.png",
 		video: "https://www.youtube.com/embed/iAKX02FE-Mw",
@@ -483,7 +483,7 @@ export const DATA = [
 	},
 	{
 		id: "10",
-		title: "KAMIL PASCASARJANA ITB",
+		title: "KAMIL Pascasarjana ITB",
 		slug: "kamil",
 		logo: "kamil.png",
 		video: "https://www.youtube.com/embed/u-YXq500JPg",

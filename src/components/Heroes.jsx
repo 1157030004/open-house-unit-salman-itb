@@ -17,7 +17,7 @@ const Heroes = (props) => {
                     <h1 className=" font-bold text-4xl md:text-5xl max-w-xl  leading-tight">Open House Unit </h1>
                     <h1 className=" font-bold text-4xl md:text-5xl max-w-xl  leading-tight">Masjid Salman ITB</h1>
                     <hr className=" w-12 h-1 bg-orange-500 rounded-full mt-8"/>
-                    <p className=" text-base leading-relaxed mt-8 font-semibold">Your ultimate travel companion. Carries all the information you need while travelling</p>
+                    <p className=" text-base leading-relaxed mt-8 font-semibold">Ayo aktualisasikan dirimu dengan mengikuti unit-unit kegiatan Masjid Salman ITB!</p>
                     <div className="get-app flex space-x-5 mt-10 justify-center md:justify-start">
                         <button onClick={() => window.location.assign("https://salmanitb.com/")} className="apple bg-white shadow-md px-3 py-2 rounded-lg flex items-center space-x-4">
                             <div className="logo">
