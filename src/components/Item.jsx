@@ -26,7 +26,7 @@ const Item = (props) => {
                     <div className="flex flex-col items-center py-8">
                         <div className="flex flex-col w-full mb-12 text-left">
                             {u.registration ? (
-                                <button onClick={() => window.location.assign(`${u.registration}`)} className="btn btn-primary w-48">Pendaftaran</button> 
+                                <button onClick={() => window.location.assign(`${u.registration}`)} className="btn btn-primary w-48 mb-5">Pendaftaran</button> 
                             ) : null}
                             <div className="w-full mx-auto lg:w-1/2">
 

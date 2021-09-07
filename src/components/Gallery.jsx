@@ -9,14 +9,14 @@ const Gallery = () => {
     const tampan = DATA.map(u => u.gallery);
     return (
         <div class="container mx-auto px-5">
-    <div class="grid-cols-3 grid gap-1 p-20 space-y-0 md:space-y-0 md:grid md:gap-3 md:grid-rows-3 ">
+    <div class="grid-cols-3 space-y-2  md:space-y-0 md:grid md:gap-3 md:grid-rows-3 ">
 
            {DATA.map(u =>
            u.slug == slugParam ? (
                <>
                 {u.gallery.map(g =>(
-                    <div className="w-full rounded">
-                    <img className="rounded-lg" src={`/illustrations/${u.slug}/${g.img}`} alt="" />
+                    <div className="w-full rounded ">
+                    <img className="rounded-md " src={`/illustrations/${u.slug}/${g.img}`} alt="" />
                     </div>
                 ))}
                </>

@@ -9,7 +9,7 @@ import {DATA} from "../../data"
 const Home = (props) => {
 
     return (
-        <div className="home flex flex-col overflow-y-hidden items-center">
+        <div className="home flex flex-col overflow-y-hidden overflow-x-hidden items-center">
             <Heroes {...props} />
             <Unit {...props} data={DATA} />
             {/* <Item /> */}
