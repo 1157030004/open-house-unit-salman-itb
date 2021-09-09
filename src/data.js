@@ -402,24 +402,41 @@ export const DATA = [
 		video: "https://www.youtube.com/embed/iAKX02FE-Mw",
 		registration: "https://bit.ly/PendaftaranUPTQ2021",
 		profile:
-			"Unit Pengembangan Tilawatil Quran (UPTQ) Salman ITB adalah salah satu unit kegiatan mahasiswa Masjid Salman ITB yang memiliki fokus dalam pembinaan tilawah quran dan bahasa arab. Untuk mendukung hal tersebut, UPTQ memiliki beberapa program kerja utama yaitu pembinaan tahsin, morfologi bahasa arab, gramatika bahasa arab, bengkel murattal, quran festival dan daurah bahasa arab.",
-		vision: "Syiar seni Qur'an, asyik dan kreatif.",
+			"UPTQ (Unit Pengembangan Tilawatil Quran) merupakan unit yang berfokus pada pengembangan seni dan syiar dalam bidang tilawah Al-Qur'an. Disini kamu dapat mengembangkan diri dalam berbagai pembinaan dan pelatihan yang berkaitan dengan Al-Quran, seperti pembinaan tahsin, tahfizh, bahasa Arab sampai pelatihan maqamat Al Qur'an, baik murattal maupun mujawwad. Selain mengembangkan diri dengan berbagai pembinaan, di UPTQ kamu juga bisa mengembangkan kemampuan berorganisasi. Dan yang gak kalah penting, kamu juga akan dapat teman-teman yang saling mengingatkan dalam kebaikan.",
+		vision:
+			"Membentuk kader UPTQ yang berjiwa pemimpin dan amanah melalui implementasi nilai-nilai Qur ani, efisiensi sistem, dan penguatan ukhuwwah, serta seni dan syiar Al-Qur'an.",
 		activities: [
 			{
-				title: "Bengkel Murottal",
-				desc: "Bengkel ini memperkenalkan dan menyediakan wadah bagi jama’ah salman untuk bisa belajar langgam. Pesertanya terdiri dari jama’ah Salman, masyarakat umum dan mahasiswa. Diadakan rutin setiap hari ahad.",
+				title: "Pembinaan Tahsin",
+				desc: "Program perbaikan bacaan Al-Qur'an yang dilaksanakan setiap pekan secara online menggunakan media google meet, secara umum kegiatannya: Pembinaan setiap pekan, UTS, dan UAS.",
 			},
 			{
-				title: "Klub Murottal Mujawwad",
-				desc: "Mendalami bacaan seni Al-Qur’an dengan peserta anggota dan pengurus UPTQ. Diadakan rutin tiap pekan di hari Sabtu.",
+				title: "Pembinaan Tahfidz",
+				desc: "Pembinaan tahfizh yang dilaksanakan setiap pekan secara online menggunakan media google meet, secara umum kegiatannya: setoran setiap pekan, UAS",
 			},
 			{
-				title: "Klub Kaligrafi",
-				desc: "Belajar khatil qur’an sebagai media dakwah melalui seni gambar. Kegiatan ini rutin diadakan tiap pekan di hari ahad dengan peserta anggota dan pengurus UPTQ.",
+				title: "Kelas NgoBar (Ngobrol Bahasa Arab)",
+				desc: "Pembelajaran bahasa arab dasar dalam bentuk kelas percakapan yang dilaksanakan secara rutin di akhir pekan.",
 			},
 			{
-				title: "Qiyamullayl Bareng",
-				desc: "Menyediakan wadah bagi jama’ah salman untuk mengikuti QL bersama, dengan imam-imam pilihan dari UPTQ. Kegiatan ini terbuka untuk umum.",
+				title: "ROTAN (Mumarosatu Tilawatil Quran)",
+				desc: "ROTAN merupakan program pembelajaran seni dalam membaca Al-Qur’an atau yang sering kita sebut dengan istilah murottal atau mujawwad.",
+			},
+			{
+				title: "Wake Up Now (Webinar Keputrian Upgrading Knowledge)",
+				desc: "Webinar semi workshop yang dilaksanakan untuk memberikan edukasi kepada mahasiswi di seluruh indonesia seputar ilmu qurani atau ilmu terapan quran serta menumbuhkan rasa kontributif bagi anggota internal UPTQ Al-muhandis salman ITB. Kegiatan ini juga menjadi sarana untuk berdakwah serta mensyiarkan Al-Quran diantara sesama muslimah.",
+			},
+			{
+				title: "PERKUSI (Persiapan Ikut Kompetisi)",
+				desc: "Merupakan program untuk mempersiapkan anggota yang berminat dalam menghadapi kompetisi yang berhubungan dengan seni dan syiar Al-Quran",
+			},
+			{
+				title: "Ayumi (Amalan Yaumi) Reminder",
+				desc: "Melakukan publikasi pengingat untuk melaksanakan amalan yaumi berupa poster yang dibagikan melalui grup UPTQ sekali sepekan",
+			},
+			{
+				title: "PAB (Penerimaan Anggota Baru)",
+				desc: "Bentuk kegiatan berupa seminar, mentoring, penugasan, juga pembinaan yang seluruhnya dijalankan secara daring.",
 			},
 		],
 		gallery: [
@@ -440,7 +457,7 @@ export const DATA = [
 		slug: "gamais",
 		logo: "gamais.png",
 		video: "https://www.youtube.com/embed/OmH-QX4YJFQ",
-		registration: "https://bit.ly/OHUGamais",
+		registration: "https://campsite.bio/simfonigamais",
 		profile:
 			"Latar Belakang didirikannya Keluarga Mahasiswa Islam (GAMAIS) ITB bisa dibaca secara lengkap pada Blueprint GAMAIS ITB 2017 -2020, khususnya BAB II Tentang GAMAIS ITB. Dokumen dapat dilihat melalui link http://bit.ly/2pBo68r. GAMAIS ITB secara resmi berdiri pada tanggal 27 Agustus 1987. Dikarenakan GAMAIS merupakan Lembaga Dakwah Kampus (LDK) ITB maka anggotanya juga hanya berasal dari mahasiswa ITB. Sebagai sebuah LDK, GAMAIS muncul sebagai role model pembelajaran bagi LDK lainnya yang ada di Indonesia.",
 		vision:
