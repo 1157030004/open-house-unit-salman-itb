@@ -449,6 +449,9 @@ export const DATA = [
 			{
 				img: "3.jpg",
 			},
+			{
+				img: "4.jpg",
+			},
 		],
 	},
 	{
