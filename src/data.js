@@ -295,13 +295,17 @@ export const DATA = [
 		video: "https://www.youtube.com/embed/JjQkspZ3E8s",
 		registration: "https://bit.ly/OHUReklamasa",
 		profile:
-			"Berawal dari kegiatan rutin yang bersifat kreatif yang diadakan oleh beberapa mahasiswa ITB dalam rangka mengisi Ramadhan di Masjid Salman ITB kemudian berlanjut hingga menjadi komunitas kreatif yang bergerak dalam medan Syiar Islam. Untuk memperteguh posisinya di Masjid Salman, akhirnya dibentuklah unit kreatif Reklamasa ITB (Reklame Kreasi Masa Salman ITB). Reklamasa secara resmi berdiri pada 19 Juni 2016 (Ramadhan 1437 H).",
+			"Berawal dari kegiatan rutin yang bersifat kreatif yang diadakan oleh beberapa mahasiswa ITB dalam rangka mengisi Ramadhan di Masjid Salman ITB kemudian berlanjut hingga menjadi komunitas kreatif yang bergerak dalam medan Syiar Islam. Untuk memperteguh posisinya di Masjid Salman, akhirnya dibentuklah unit kreatif Reklamasa ITB (Reklame Kreasi Masa Salman ITB). Reklamasa secara resmi berdiri pada 19 Juni 2016 (Ramadhan 1437 H). Sekarang, Reklamasa berfokus kepada syiar dakwah kreatif khususnya di bidang videografi.",
 		vision:
 			"Reklamasa sebagai rumah dan inkubator jiwa bermain untuk akselerasi pribadi kreatif dan spritualitatif",
 		activities: [
 			{
-				title: "Talkshow dan Workshop Grafis",
-				desc: "Pembinaan syiar kreatif untuk para jamaah dan pelaku syiar Masjid Salman ITB, secara umum untuk pelaku syiar sekitar Salman ITB. Tujuannya untuk membangkitkan flexibilitas serta kreativitas dalam berdakwah kepada masyarakat umum.",
+				title: "Rekla Academy",
+				desc: "Rangkaian pembinaan epik nan ciamik untuk Reklamuda agar jiwa dan skillnya terasah untuk membuat konten video yang mantap",
+			},
+			{
+				title: "AsikBener!",
+				desc: "Program pembinaan dalam bentuk ngobrol keislaman dan kekreatifan untuk anggota Reklamasa yang kemudian dipublikasikan dalam bentuk podcast untuk khalayak ramai di Spotify dan Anchor (awas ae lu blom danger!!)",
 			},
 			{
 				title: "Video Series",
@@ -310,6 +314,10 @@ export const DATA = [
 			{
 				title: "Video Nonseries",
 				desc: "Konten video rutin yang tidak memiliki rangkaian tema baku. Sifatnya insidental, bisa berupa dokumentasi vlog kegiatan Reklamasa atau konten hiburan dengan satu topik yang tidak berkelanjutan.",
+			},
+			{
+				title: "Dan kegiatan semau kita lainnya yang InsyaAllah asik dan keren",
+				desc: "",
 			},
 		],
 		gallery: [
@@ -444,13 +452,13 @@ export const DATA = [
 				img: "1.jpg",
 			},
 			{
-				img: "2.jpg",
-			},
-			{
-				img: "3.jpg",
-			},
-			{
 				img: "4.jpg",
+			},
+			{
+				img: "5.jpg",
+			},
+			{
+				img: "6.jpg",
 			},
 		],
 	},

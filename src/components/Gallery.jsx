@@ -5,6 +5,7 @@ import {DATA} from "../data"
 const Gallery = () => {
     const location = useLocation();
     const slugParam = location.pathname.substr(6);
+    console.log(slugParam)
 
     const tampan = DATA.map(u => u.gallery);
     return (
