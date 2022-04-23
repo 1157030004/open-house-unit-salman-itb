@@ -6,24 +6,18 @@ const Unit = (props) => {
     <>
       <div className="flex flex-wrap justify-center mx-20  ">
         {data.map((u) => (
-          <div className="flex shadow-lg rounded-lg h-auto w-80 md:w-80 cursor-pointer my-10 mx-5 p-4 transition duration-500 ease-in-out transform hover:translate-y-5 hover:shadow-2xl">
+          <div className="flex shadow-lg rounded-lg w-80 md:w-80 cursor-pointer my-10 mx-5 p-4 transition duration-500 ease-in-out transform hover:translate-y-5 hover:shadow-2xl">
             <Link to={`/unit/${u.slug}`} className="w-full block h-full">
               <img
                 alt="blog photo"
                 src={`/logo/${u.logo}`}
-                className="max-h-60 w-full object-cover"
+                className="m-0 m-auto block object-contain w-full h-full"
               />
-              <div className="w-full">
-                {/* <p className="text-primary-focus text-md font-medium">
-                      Article
-                  </p> */}
+              {/* <div className="w-full">
                 <p className=" dark:text-white text-xl font-medium mb-2">
                   {u.title}
                 </p>
-                {/* <p className="text-gray-600 dark:text-gray-300 font-light text-md truncate overflow-ellipsis">
-                    {u.desc}
-                  </p> */}
-              </div>
+              </div> */}
             </Link>
           </div>
         ))}
