@@ -1,42 +1,65 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router'
-import Gallery from './Gallery'
+import React from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
+import Gallery from "./Gallery";
 
 const Item = (props) => {
-    const {data} = props
-    const location = useLocation();
-    const slugParam = location.pathname.substr(6);
-    const slug = data.map(s => s.slug)
+  const { data } = props;
+  const location = useLocation();
+  const slugParam = location.pathname.substr(6);
+  const slug = data.map((s) => s.slug);
 
-    const handler = () =>{
-        for(let i = 0; i<slug.length; i++){
-            if(slugParam === slug[i]){
-                console.log(slug[i])
-            }
-        }
-    }   
-    handler();
-    
-    return (
-        <>
-            {data.map(u =>
-                u.slug == slugParam ? 
-                <section className="container mx-auto px-5">
-                    <div className="flex flex-col items-center py-8">
-                        <div className="flex flex-col w-full mb-12 text-left">
-                            {u.registration ? (
-                                <button onClick={() => window.location.assign(`${u.registration}`)} className="btn btn-primary w-48 mb-5">Pendaftaran</button> 
-                            ) : null}
-                            <div className="w-full mx-auto lg:w-1/2">
+  const handler = () => {
+    for (let i = 0; i < slug.length; i++) {
+      if (slugParam === slug[i]) {
+        console.log(slug[i]);
+      }
+    }
+  };
+  handler();
 
-                                <h1 className="mx-auto  text-2xl font-semibold  lg:text-3xl">{u.title}</h1>
-                                <div className="aspect-w-7 aspect-h-4 mt-5">
-                                    <iframe src={u.video} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                {/* <img className="rounded-md" src="https://picsum.photos/id/500/800/400" /> */}
+  return (
+    <>
+      {data.map((u) =>
+        u.slug === slugParam ? (
+          <section className="container mx-auto px-5">
+            <div className="flex flex-col items-center py-8">
+              <div className="flex flex-col w-full mb-12 text-left">
+                {u.registration ? (
+                  <button
+                    onClick={() => window.location.assign(`${u.registration}`)}
+                    className="btn btn-primary w-48 mb-5"
+                  >
+                    Pendaftaran
+                  </button>
+                ) : null}
+                <div className="w-full mx-auto lg:w-1/2">
+                  <h1 className="mx-auto  text-2xl font-semibold  lg:text-3xl">
+                    {u.title}
+                  </h1>
+                  <div className="aspect-w-7 aspect-h-4 mt-5">
+                    <iframe
+                      title={u.slug}
+                      src={u.video}
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    />
+                  </div>
+                  {u.graduationVideo && (
+                    <div className="aspect-w-7 aspect-h-4 mt-5">
+                      <iframe
+                        title={u.slug}
+                        src={u.graduationVideo}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      />
+                    </div>
+                  )}
+                  {/* <img className="rounded-md" src="https://picsum.photos/id/500/800/400" /> */}
 
-                                {/* <div className="w-full carousel">
+                  {/* <div className="w-full carousel">
                                     <div id="item1" className="w-full pt-20 carousel-item">
                                         <img src="https://picsum.photos/id/500/800/400" className="w-full"/>
                                     </div> 
@@ -56,35 +79,78 @@ const Item = (props) => {
                                         <Link to={`/unit/${u.slug}/carousel#item3`} className="btn btn-xs btn-circle">3</Link> 
                                         <Link to={`/unit/${u.slug}/carousel#item4`} className="btn btn-xs btn-circle">4</Link>
                                 </div> */}
-                                
-                                <h2 className="mx-auto mt-4 mb-4 text-xl font-semibold ">Profil Singkat</h2>
-                                <p className="mx-auto text-base font-normal leading-relaxed ">{u.profile}</p>
-                                
-                                <h3 className="mx-auto mt-4 mb-4 text-xl font-semibold ">Visi</h3>
-                                <p className="mx-auto text-base font-normal leading-relaxed ">{u.vision}</p>
-                                <h3 className="mx-auto mt-4 mb-4 text-xl font-semibold ">Kegiatan Unggulan</h3>
-                                {u.activities.map(a =>(
-                                    <>
-                                                {/* <h4 className="mx-auto mt-4 text-xl font-normal ">{a.title}</h4> */}
-                                        <ul className="list-disc">
-                                            <li className="font-semibold">{a.title}</li>
-                                        </ul>
-                                        <p className="mx-auto mb-4 text-base font-normal leading-relaxed">{a.desc}</p>
-                                    </>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                <Gallery />  
-                </section>
-                : null
-                )}
-        </>
 
-    
-    )
-}
+                  <h2 className="mx-auto mt-4 mb-4 text-xl font-semibold ">
+                    Profil Singkat
+                  </h2>
+                  <p className="mx-auto text-base font-normal leading-relaxed whitespace-pre-line">
+                    {u.profile}
+                  </p>
 
-export default Item
+                  <h3 className="mx-auto mt-4 mb-4 text-xl font-semibold ">
+                    Visi
+                  </h3>
+                  <p className="mx-auto text-base font-normal leading-relaxed ">
+                    {u.vision}
+                  </p>
+                  {u.contact && (
+                    <>
+                      <h3 className="mx-auto mt-4 mb-4 text-xl font-semibold ">
+                        Kontak
+                      </h3>
+                      <table className="table-auto font-normal">
+                        <tbody>
+                          <tr>
+                            <th className="font-normal pr-10">Website</th>
+                            <th className="font-normal text-blue-600">
+                              <a target="_blank" href={u.contact.website}>
+                                {u.contact.website}
+                              </a>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th className="font-normal pr-10">Email</th>
+                            <th className="font-normal">{u.contact.email}</th>
+                          </tr>
+                          <tr>
+                            <th className="font-normal pr-10">Telepon</th>
+                            <th className="font-normal">{u.contact.phone}</th>
+                          </tr>
+                          <tr>
+                            <th className="font-normal pr-10">Alamat</th>
+                            <th className="font-normal">{u.contact.address}</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                      {/* <div className="flex flex-row">
+                        <p className="font-normal">Website</p>
+                        <Link className="ml-10" to={u.contact.website}>
+                          {u.contact.website}
+                        </Link>
+                      </div>
+                      <div className="flex flex-row">
+                        <p className="font-normal">Email</p>
+                        <p className="ml-10">{u.contact.email}</p>
+                      </div>
+                      <div className="flex flex-row">
+                        <p className="font-normal">Phone</p>
+                        <p className="ml-10">{u.contact.phone}</p>
+                      </div>
+                      <div className="flex flex-row">
+                        <p className="font-normal">Address</p>
+                        <p className="ml-10">{u.contact.address}</p>
+                      </div> */}
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+            <Gallery />
+          </section>
+        ) : null
+      )}
+    </>
+  );
+};
 
-
+export default Item;
